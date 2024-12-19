@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Toko Buku</h1>
+            <p>Temukan buku favorit Anda di sini!</p>
+            <div class="rating">
+                <span >&#9733;</span>
+                <span >&#9733;</span>
+                <span >&#9733;</span>
+                <span >&#9733;</span>
+                <span >&#9733;</span> <!-- Bintang kosong -->
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products" class="container">
+            <h2>Daftar Produk</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://bukukita.com/babacms/displaybuku/117736_f.jpg" alt="Buku Novel">
+                    <h3>Novel</h3>
+                    <p>Harga: Rp 10.000</p>
+                    <div class="rating">
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span> <!-- Bintang kosong -->
+                    </div>
+                    <button onclick="buyNow('Novel', 10000)">Beli Sekarang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKIoCL27oBk99bakFq60zoE26cKiNJYQ3Og&s" alt="Buku Pantun">
+                    <h3>Pantun</h3>
+                    <p>Harga: Rp 20.000</p>
+                    <div class="rating">
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span> <!-- Bintang kosong -->
+                    </div>
+                    <button onclick="buyNow('Pantun', 20000)">Beli Sekarang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVu8ryZ1SA74RCr0SQrYn3NJT3rO-cLnuI_w&s" alt="Majalah">
+                    <h3>Majalah</h3>
+                    <p>Harga: Rp 30.000</p>
+                    <div class="rating">
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span>
+                        <span >&#9733;</span> <!-- Bintang kosong -->
+                    </div>
+                    <button onclick="buyNow('Majalah', 30000)">Beli Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah toko buku yang menyediakan berbagai jenis buku untuk semua kalangan. Temukan buku-buku terbaru dan terlaris di sini!</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Kontak Kami</h2>
+            <p>Email: info@tokobuku.com</p>
+            <p>Telepon: +62-858-9090-3170</p>
+            <p>Alamat: Jl. Gembong Cayur</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Buku Online. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function buyNow(productName, price) {
+            alert(`Anda telah membeli ${productName} seharga Rp ${price.toLocaleString()}. Terima kasih atas pembeliannya!`);
+        }
+    </script>
+</body>
+</html>
